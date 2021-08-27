@@ -104,7 +104,7 @@ The project is coded using a simple and intuitive structure presented bellow:
    |         |    |-- login.html           # Login page
    |         |    |-- register.html        # Register page
    |         |
-   |      index.html                       # The default page
+   |      poem-list.html                       # The default page
    |     page-404.html                     # Error 404 page
    |     page-500.html                     # Error 404 page
    |       *.html                          # All other HTML pages

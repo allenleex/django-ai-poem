@@ -2,8 +2,19 @@
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-					<span class="align-middle">AdminKit</span>
+					<span class="align-middle">AdminKit <br/><small>{{segment}}</small></span>
 				</a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						诗歌库
+					</li>
+
+					<li class="sidebar-item {% if 'poem' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="poem-list.html">
+							<i class="align-middle" data-feather="book-open"></i> <span class="align-middle">找诗歌</span>
+						</a>
+					</li>
+				</ul>
 
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
@@ -16,25 +27,25 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item {% if 'profile' in segment %} active {% endif %}">
+					<li class="sidebar-item {% if 'pages-profile' in segment %} active {% endif %}">
 						<a class="sidebar-link" href="pages-profile.html">
 							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
 						</a>
 					</li>
 
-					<li class="sidebar-item {% if 'settings' in segment %} active {% endif %}">
+					<li class="sidebar-item {% if 'pages-settings' in segment %} active {% endif %}">
 						<a class="sidebar-link" href="pages-settings.html">
 							<i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
 						</a>
 					</li>
 
-					<li class="sidebar-item {% if 'invoice' in segment %} active {% endif %}">
+					<li class="sidebar-item {% if 'pages-invoice' in segment %} active {% endif %}">
 						<a class="sidebar-link" href="pages-invoice.html">
 							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
 						</a>
 					</li>
 
-					<li class="sidebar-item {% if 'blank' in segment %} active {% endif %}">
+					<li class="sidebar-item {% if 'pages-blank' in segment %} active {% endif %}">
 						<a class="sidebar-link" href="pages-blank.html">
 							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
 						</a>
